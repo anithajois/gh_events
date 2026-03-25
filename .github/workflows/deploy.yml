@@ -17,3 +17,10 @@ jobs:
      with:
       name: dist-files
       path: dist
+   - name: Download Artifacts
+     uses: actions/download-artifact@v4
+     with: 
+        name: dist-files
+   - name: Output Contents
+     run: ls
+
